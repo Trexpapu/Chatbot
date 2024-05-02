@@ -1,0 +1,20 @@
+¿Cuál es la capital de Francia?|La capital de Francia es París.
+¿Quién escribió Romeo y Julieta?|Romeo y Julieta fue escrita por William Shakespeare.
+¿Cuál es el símbolo químico del oro?|El símbolo químico del oro es Au.
+¿Dónde está Francia?|Francia está en Europa.
+¿Cuál es la fórmula química del agua?|La fórmula química del agua es H2O.
+¿Quién pintó la Mona Lisa?|La Mona Lisa fue pintada por Leonardo da Vinci.
+¿Cuál es el planeta más grande del sistema solar?|El planeta más grande del sistema solar es Júpiter.
+¿Cuál es la capital de Italia?|La capital de Italia es Roma.
+¿Cuál es el océano más grande del mundo?|El océano más grande del mundo es el Océano Pacífico.
+¿Quién fue el primer presidente de los Estados Unidos?|El primer presidente de los Estados Unidos fue George Washington.
+¿Cuál es la montaña más alta del mundo?|La montaña más alta del mundo es el Monte Everest.
+¿Quién escribió Don Quijote de la Mancha?|Don Quijote de la Mancha fue escrito por Miguel de Cervantes.
+¿Cuál es la capital de España?|La capital de España es Madrid.
+¿Cuál es el río más largo del mundo?|El río más largo del mundo es el río Amazonas.
+¿Quién fue el primer ser humano en viajar al espacio?|El primer ser humano en viajar al espacio fue Yuri Gagarin.
+¿Cuál es el animal más grande del mundo?|El animal más grande del mundo es la ballena azul.
+¿En qué año comenzó la Segunda Guerra Mundial?|La Segunda Guerra Mundial comenzó en 1939.
+¿Quién fue el primer hombre en pisar la luna?|El primer hombre en pisar la luna fue Neil Armstrong.
+¿Cuál es la capital de China?|La capital de China es Pekín.
+¿Cuál es el metal más abundante en la corteza terrestre?|El metal más abundante en la corteza terrestre es el aluminio.
