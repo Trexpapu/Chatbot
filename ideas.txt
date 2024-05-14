@@ -1,0 +1,1 @@
+agregar sinonimos para las palabras, que funcione en ingles, traer la informacion de una base de datos

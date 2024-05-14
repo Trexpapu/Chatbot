@@ -18,3 +18,4 @@
 ¿Quién fue el primer hombre en pisar la luna?|El primer hombre en pisar la luna fue Neil Armstrong.
 ¿Cuál es la capital de China?|La capital de China es Pekín.
 ¿Cuál es el metal más abundante en la corteza terrestre?|El metal más abundante en la corteza terrestre es el aluminio.
+Hola|¡Hola! ¿como estas?
