@@ -7,13 +7,17 @@ from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
 import unicodedata
 import re
-from spellchecker import SpellChecker
+
+
+
 
 # Download necessary NLTK resources
 nltk.download("punkt")
 nltk.download("stopwords")
 nltk.download("wordnet")
 nltk.download('averaged_perceptron_tagger')
+
+
 
 # Function to load knowledge from the text file
 def load_knowledge(file):
@@ -24,36 +28,32 @@ def load_knowledge(file):
             knowledge[question] = answer
     return knowledge
 
+
+
 # Function to preprocess user's question
-def preprocess_question(question):
+def process_questions(question):
     # Convert the question to lowercase
     question = question.lower()
     
-    # Correct spelling errors
-    spell = SpellChecker(language='es')
-    corrected_question = []
-    for word in question.split():
-        corrected_word = spell.correction(word)
-        if corrected_word is not None:
-            corrected_question.append(corrected_word)
-        else:
-            corrected_question.append(word)  # Use the original word if it cannot be corrected
-    
-    question = " ".join(corrected_question)
-    clean_question = ''.join((c for c in unicodedata.normalize('NFD', question) if unicodedata.category(c) != 'Mn'))
+    # Remove special characters (including question marks)
+    clean_question = re.sub(r'[^\w\s]', '', question)
     
     # Tokenize the question
     tokens = word_tokenize(clean_question, language='spanish')  # Using Spanish tokenizer
+    print(tokens)
+
+    
     
     # Remove stopwords and punctuation
     stop_words = set(stopwords.words("spanish"))
-    tokens = [word for word in tokens if word not in stop_words and word not in string.punctuation]
+    clean_tokens = [word for word in tokens if word not in stop_words and word not in string.punctuation]
     
     # Lemmatize the tokens
     lemmatizer = nltk.WordNetLemmatizer()
-    tokens = [lemmatizer.lemmatize(word, get_wordnet_pos(tag)) for word, tag in nltk.pos_tag(tokens)]
+    lemmatized_tokens = [lemmatizer.lemmatize(word, get_wordnet_pos(tag)) for word, tag in nltk.pos_tag(clean_tokens)]
+    print(lemmatized_tokens)
     
-    return " ".join(tokens)
+    return " ".join(lemmatized_tokens)
 
 
 
@@ -130,7 +130,7 @@ def chatbot(user_input):
     knowledge_file = "Chat/information.txt"
     knowledge = load_knowledge(knowledge_file)
     processed_knowledge = process_information(knowledge)
-    processed_user_input = preprocess_question(user_input)
+    processed_user_input = process_questions(user_input)
     response = find_best_response(processed_user_input, processed_knowledge)
     return response
 
