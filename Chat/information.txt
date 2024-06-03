@@ -1,15 +1,17 @@
-Hola|¡Hola! ¿como estas?
-¿Donde puedo ver el plan academico?|Puedes ver el plan academico en https://www.fie.umich.mx/ 
-me encuentro feliz|Me alegra que estes feliz.
-Estoy triste|Espero que tu problema se solucione, si necesitas ayuda puedes acudir al psicologo de la facultad.
-¿Para que sirve este chat?|Fuí creado para ayudar a los estudiantes de la FIE a otorgar información administrativa de forma rápida.
-¿Donde obtengo información para mi servicio social?|Puedes pedir información en la dirección del edificio omega.
-¿Donde se encuentran los edificios de la facultad?|Esta el edificio Omega, el edificio B y el G.
-¿Qué significa FIE?|Facultad de ingenieria electrica.
-¿Que paginas web tiene la FIE?|La página web de la FIE es: https://www.fie.umich.mx/ y la pagina escolar de la fie es https://escolar.fie.umich.mx/.
-¿Como inicio mi servicio social?|Tienes que acudir con un asesor que tenga programas de servicio social, posterior a ello ir pedir información con claudia y birscrak.
-¿Cual es la ruta para llegar al omega?|Desde la entrada prinicipal dirigete a la biblioteca de la universidad, posterior a ello ve en direccion a la facultad de arquitectura, sigue caminando derecho y llegaras al omega.
-¿Como puedo hacer mi tramite de titulacion?|Todavia no sé.
-¿Que se aprende en la carrera de ingenieria en computacion?|Se aprende sobre computadoras, como funcionan desde la parte de hardware al software, si te gustan estos temas esta carrera es para ti.
-¿Donde esta el edificio B?|Camina por el camino principal de la entrada principal, el edificio se encuentra antes de una interseccion.
-¿Cuantos semestres dura la carrera de ingenieria en computacion?|Diez semestres.
+hola|hola como estas
+cuantas carreras tiene la facultad de ingenieria electrica|actualmente existe ingenieria electrica, computacion y electronica
+donde puedo ver el plan academico|puedes ver el plan academico de las 3 distintas carreras en https://www.fie.umich.mx/alumnos-2/materias-de-licenciatura/
+me encuentro feliz|me alegra que estes feliz
+estoy triste|espero que tu problema se solucione si necesitas ayuda puedes acudir al psicologo de la facultad
+para que sirve este chat|fui creado para ayudar a los estudiantes de la fie a otorgar informacion administrativa de forma rapida
+donde obtengo informacion para mi servicio social|puedes pedir informacion en la direccion del edificio omega
+donde se encuentran los edificios de la facultad|esta el edificio omega: (https://www.google.com/maps/place/Facultad+de+Ingenier%C3%ADa+El%C3%A9ctrica/@19.6873596,-101.2050581,18z/data=!4m6!3m5!1s0x842d0dd483445aff:0x3ff6144bc160f102!8m2!3d19.6869298!4d-101.2044579!16s%2Fg%2F1tfl9_0b?entry=ttu) tambien esta el edificio B (https://www.google.com/maps/place/Facultad+De+Ingenier%C3%ADa+El%C3%A9ctrica+-+UMSNH+-+Edificio+B/@19.6893189,-101.2027914,18z/data=!4m6!3m5!1s0x842d0dd42e9ae8f1:0xc3a77dc3a9066e88!8m2!3d19.6893702!4d-101.2018624!16s%2Fg%2F11c2ltr2pd?entry=ttu)
+que significa fie|facultad de ingenieria electrica
+que paginas web tiene la fie la pagina web de la fie|es https://www.fie.umich.mx/ y la pagina escolar de la fie es https://escolar.fie.umich.mx/
+como inicio mi servicio social|tienes que acudir con un asesor que tenga programas de servicio social posterior a ello ir pedir informacion con claudia y birscrak
+cual es la ruta para llegar al omega|desde la entrada principal dirigete a la biblioteca de la universidad posterior a ello ve en direccion a la facultad de arquitectura sigue caminando derecho y llegaras al omega
+como puedo hacer mi tramite de titulacion|todavia no se
+que se aprende en la carrera de ingenieria en computacion|se aprende sobre computadoras como funcionan desde la parte de hardware al software si te gustan estos temas esta carrera es para ti
+de que trata|se aprende sobre computadoras como funcionan desde la parte de hardware al software si te gustan estos temas esta carrera es para ti
+donde esta el edificio b|camina por el camino principal de la entrada principal el edificio se encuentra antes de una interseccion
+cuantos semestres dura la carrera de ingenieria en computacion|diez semestres

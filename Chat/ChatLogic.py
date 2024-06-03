@@ -86,6 +86,7 @@ def find_best_response(question, knowledge):
     # Get the index of the most similar question or answer
     max_similarity_question_index = question_similarity.argmax()
     max_similarity_answer_index = answer_similarity.argmax()
+    print(max_similarity_question_index, max_similarity_answer_index)
     if max(question_similarity[0]) > max(answer_similarity[0]):
         if question_similarity[0][max_similarity_question_index] > 0:
             # The most similar question has a similarity greater than zero
@@ -102,35 +103,13 @@ def find_best_response(question, knowledge):
             return "Lo siento, no conozco la respuesta a esa pregunta."
 
 
-# Function to process information from the knowledge dictionary
-def process_information(dictionary):
-    processed_dictionary = {}
-    for question, answer in dictionary.items():
-        # Remove accents
-        question_without_accents = ''.join((c for c in unicodedata.normalize('NFD', question) if unicodedata.category(c) != 'Mn'))
-        answer_without_accents = ''.join((c for c in unicodedata.normalize('NFD', answer) if unicodedata.category(c) != 'Mn'))
-        # Remove unwanted characters (including punctuation)
-        clean_question = re.sub(r'[^\w\sáéíóúüñÁÉÍÓÚÜÑ]', '', question_without_accents.replace("´", ""))
-        clean_answer = re.sub(r'[^\w\sáéíóúüñÁÉÍÓÚÜÑ]', '', answer_without_accents.replace("´", ""))
-        # Tokenize words
-        question_words = word_tokenize(clean_question)
-        answer_words = word_tokenize(clean_answer)
-        # Convert words to lowercase
-        lowercase_question_words = [word.lower() for word in question_words]
-        lowercase_answer_words = [word.lower() for word in answer_words]
-        # Join words into a single text
-        processed_question = ' '.join(lowercase_question_words)
-        processed_answer = ' '.join(lowercase_answer_words)
-        # Add to the processed dictionary
-        processed_dictionary[processed_question] = processed_answer
-    return processed_dictionary
+
 
 # Main function of the chatbot
 def chatbot(user_input):
     knowledge_file = "Chat/information.txt"
     knowledge = load_knowledge(knowledge_file)
-    processed_knowledge = process_information(knowledge)
     processed_user_input = process_questions(user_input)
-    response = find_best_response(processed_user_input, processed_knowledge)
+    response = find_best_response(processed_user_input, knowledge)
     return response
 

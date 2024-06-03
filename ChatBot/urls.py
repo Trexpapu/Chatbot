@@ -17,9 +17,15 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 from Chat import views as chat_views  # Importa las vistas de tu aplicación Chat
-
+from Chat.views import AnswerViewSet, QuestionViewSet
+from rest_framework.routers import DefaultRouter
+# Define el enrutador para los ViewSets
+router = DefaultRouter()
+router.register(r'answers', AnswerViewSet)
+router.register(r'questions', QuestionViewSet)
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('chatbot', chat_views.chatbot),  # Ruta para manejar la URL raíz
+    path('', include(router.urls)), # Agrega las URLs de los ViewSets
 ]

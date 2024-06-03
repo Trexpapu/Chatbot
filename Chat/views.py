@@ -4,6 +4,19 @@ from rest_framework.decorators import api_view
 from rest_framework.response import Response
 from Chat import ChatLogic as ch
 from rest_framework import status
+from Chat.serializers import AnswerSerializer, QuestionSerializer
+from Chat.models import Answer, Question
+from rest_framework import viewsets
+
+
+
+class AnswerViewSet(viewsets.ModelViewSet):
+    queryset = Answer.objects.all()
+    serializer_class = AnswerSerializer
+
+class QuestionViewSet(viewsets.ModelViewSet):
+    queryset = Question.objects.all()
+    serializer_class = QuestionSerializer
 
 @api_view(['GET', 'POST'])
 def chatbot(request):
