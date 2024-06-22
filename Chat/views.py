@@ -3,7 +3,6 @@ from django.shortcuts import render
 from rest_framework.decorators import api_view
 from rest_framework.response import Response
 from Chat import ChatLogic as ch
-from rest_framework import status
 from Chat.serializers import AnswerSerializer, QuestionSerializer
 from Chat.models import Answer, Question
 from rest_framework import viewsets
